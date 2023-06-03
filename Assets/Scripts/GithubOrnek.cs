@@ -8,6 +8,8 @@ public class GithubOrnek : MonoBehaviour
     void Start()
     {
         Debug.Log("Github Örnek");
+        
+        Debug.Log("Github Örnek2");
     }
 
     // Update is called once per frame
