@@ -19,6 +19,7 @@ namespace TransforAndVectors
         {
             //TransformChange();
             
+            VectorOperating();
         }
 
         private void Update()
@@ -31,7 +32,7 @@ namespace TransforAndVectors
             
             //Distance();
             
-            Lerp();
+            //Lerp();
         }
 
         private void TransformChange()
@@ -122,6 +123,22 @@ namespace TransforAndVectors
         private void Lerp()
         {
             transform.position = Vector3.Lerp(transform.position, cube2.position, lerpSpeed * Time.deltaTime);
+        }
+
+        private void VectorOperating()
+        {
+            Vector3 firstVector = new Vector3(2, 5, 10);
+            Vector3 secondVector = Vector3.one;
+
+            Vector3 toplam = firstVector + secondVector;
+            Vector3 fark = firstVector - secondVector;
+
+            Debug.Log("Vector toplamı : " + toplam);
+            Debug.Log("Vector farkı : " + fark);
+            
+            Debug.Log(firstVector * 2);
+            Debug.Log(secondVector / 2);
+            Debug.Log(secondVector * 0.5f);
         }
     }
 }
