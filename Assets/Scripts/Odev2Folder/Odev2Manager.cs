@@ -70,6 +70,7 @@ namespace Odev2Folder
 
             _cloneSphere2.transform.position = 
                 Vector3.Lerp(_cloneSphere2.transform.position, cube2.transform.position, Time.deltaTime * 10);
+            
         }
 
         private void RandomObjectSpawn()
