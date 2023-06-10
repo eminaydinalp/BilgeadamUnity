@@ -9,6 +9,12 @@ namespace Odev2Folder
         private float _gameTime;
         
         [SerializeField] private float repeatTime;
+        public GameObject cube;
+
+        private void Start()
+        {
+            cube = GameObject.FindGameObjectWithTag("Cube");
+        }
 
         private void Update()
         {
@@ -24,6 +30,13 @@ namespace Odev2Folder
         private void Move()
         {
             transform.position = new Vector3(Random.Range(-5f, 5f), Random.Range(-5f, 5f), Random.Range(-5f, 5f));
+            
+            // Obje ile aramızda belli bir mesafeyi koruyoruz
+            
+            if (Vector3.Distance(transform.position, cube.transform.position) < 4)
+            {
+                Move();
+            }
         }
     }
 }

@@ -250,7 +250,13 @@ MonoBehaviour:
   sphere: {fileID: 1852065754992071514, guid: 4e496cb98abf34701821cf73831c12c0, type: 3}
   sphere2: {fileID: 2097768158571306537, guid: 7f79286d31eb24c5095a4c75a31626a4, type: 3}
   cube2: {fileID: 1068398176}
+  capsule: {fileID: 5584345477265724311, guid: d77e2e08a0e74408c86c70b71f0a5f09, type: 3}
   _rotationSpeed: 10
+  objects:
+  - {fileID: 5584345477265724311, guid: d77e2e08a0e74408c86c70b71f0a5f09, type: 3}
+  - {fileID: 594647082985747390, guid: 047b6ff2583cb4ae2867f99aca44a4da, type: 3}
+  - {fileID: 1852065754992071514, guid: 4e496cb98abf34701821cf73831c12c0, type: 3}
+  - {fileID: 2097768158571306537, guid: 7f79286d31eb24c5095a4c75a31626a4, type: 3}
 --- !u!4 &662888735
 Transform:
   m_ObjectHideFlags: 0
@@ -364,7 +370,7 @@ GameObject:
   - component: {fileID: 1068398177}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Cube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
