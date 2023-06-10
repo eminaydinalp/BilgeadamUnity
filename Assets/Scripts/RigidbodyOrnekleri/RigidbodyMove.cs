@@ -6,7 +6,7 @@ namespace RigidbodyOrnekleri
     public class RigidbodyMove : MonoBehaviour
     {
         private Rigidbody _rigidbody;
-
+        [SerializeField] private float force;
         private void Awake()
         {
             _rigidbody = GetComponent<Rigidbody>();
@@ -18,7 +18,13 @@ namespace RigidbodyOrnekleri
 
         private void Update()
         {
-            MoveVelocity();
+            //MoveVelocity();
+
+            if (Input.GetMouseButtonDown(0))
+            {
+                AddForce();
+                //MoveVelocity();
+            }
         }
 
         private void TransformMove()
@@ -29,6 +35,14 @@ namespace RigidbodyOrnekleri
         private void MoveVelocity()
         {
             _rigidbody.velocity = Vector3.forward * 5;
+        }
+
+        private void AddForce()
+        {
+            _rigidbody.AddForce(Vector3.forward * force, ForceMode.Force);
+            _rigidbody.AddForce(Vector3.forward * force, ForceMode.Acceleration);
+            _rigidbody.AddForce(Vector3.forward * force, ForceMode.Impulse);
+            _rigidbody.AddForce(Vector3.forward * force, ForceMode.VelocityChange);
         }
     }
 }
