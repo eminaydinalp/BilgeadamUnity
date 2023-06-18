@@ -1,23 +1,27 @@
 using System;
+using ObjectPoolOrnekleri;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 namespace InstantiateOrnekleri
 {
-    public class Bullet : MonoBehaviour
+    public class Bullet : MonoBehaviour, IPoolable
     {
         public float speed;
-
+        public string PoolType => _poolType;
+        [SerializeField] private string _poolType;
         private void Start()
         {
-            DestroyBullet();
+            //DestroyBullet();
         }
 
         private void Update()
         {
-            // if (transform.position.z > 100)
-            // {
-            //     Destroy(gameObject);
-            // }
+            if (transform.position.z > 100)
+            {
+                //Destroy(gameObject);
+                ObjectPooler.Instance.ReturnObject(gameObject);
+            }
             
             Move();
         }
@@ -32,5 +36,7 @@ namespace InstantiateOrnekleri
         {
             Destroy(gameObject, 2);
         }
+
+       
     }
 }
