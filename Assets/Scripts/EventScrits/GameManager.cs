@@ -12,5 +12,15 @@ namespace EventScrits
                 EventManager.InvokeOnGameFinish();
             }
         }
+
+        public void GameStart()
+        {
+            Debug.Log("Oyun Başladı");
+        }
+        
+        public void GameStart(int score)
+        {
+            Debug.Log("Oyun Başladı ve scorumuz : " + score);
+        }
     }
 }
