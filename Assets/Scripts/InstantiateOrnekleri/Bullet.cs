@@ -20,7 +20,7 @@ namespace InstantiateOrnekleri
             if (transform.position.z > 100)
             {
                 //Destroy(gameObject);
-                ObjectPooler.Instance.ReturnObject(gameObject);
+                ObjectPoolerWithList.Instance.ReturnObject(gameObject);
             }
             
             Move();

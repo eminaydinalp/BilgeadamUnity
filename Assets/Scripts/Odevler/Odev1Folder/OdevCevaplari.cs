@@ -1,7 +1,6 @@
-using System;
 using UnityEngine;
 
-namespace Odev1Folder
+namespace Odevler.Odev1Folder
 {
     public class OdevCevaplari : MonoBehaviour
     {

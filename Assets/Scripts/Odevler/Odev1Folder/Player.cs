@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-namespace Odev1Folder
+namespace Odevler.Odev1Folder
 {
     public class Player : MonoBehaviour
     {

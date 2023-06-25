@@ -1,0 +1,19 @@
+Soru1 - Sahneye bir prefab instantiate edip oluşan objeye x yönünde sürekli bir rotasyon verelim.
+
+Soru2 - Sahneye bir prefab instantiate edip oluşan prefabı z yönünde belli bir hızda hareket ettirelim ve obje z ekseninde
+100 birimi geçince ilk oluştuğu yere pozisyonunu eşitleyelim.Yani sürekli başladığı yerden ilerlemeye devam etsin objemiz.
+
+Soru3 - Sahnede bir küp oluşturun ve bu cube atadığınız bir script ile daha önce oluşturduğunuz bir sphere prefabını instantiate edin. 
+Oluşan sphere sahnede 1 saniye aralıklarla ekranda görebileceğimiz sınırları aşmadan random olarak başka pozisyonlara gitsin. 
+Ve cube objemiz sürekli sphere objesine bakıyor olsun.
+
+Soru4 - Sahnede boş bir obje oluşturup bu objeye atadığınız script ile daha önce oluşturduğunuz capsule perefabından 
+10 tane instantiate edin ve bu objeler oluşur oluşmaz kendilerini oluşturan objenin childi olsunlar. 
+Daha sonra parent objenin scriptinden bu on tane objenin capsule colliderina ulaşıp isTrigger’ını true, 
+radius değerini 5, height değerini 10 yapıp center değerini ise kendi oluşturduğunuz bir vector3 ile toplayıp değiştiriniz.
+
+Soru5 - 4 adet birbirinden farklı prefab oluşturup bu prefabları sahneye 2 saniye aralıklarla random bir şekilde 
+random pozisyonlarda oluşturalım. Yani 2 saniyede bir bu 4 prefabdan random bir şekilde bir tanesi ekranda 
+görebileceğimiz şekilde random bir pozisyona spanw edilecekler. 
+  
+Soru6 - 5.sorudaki oluşan objeler kendisini oluşturan objeye doğru lerp ile hareket edecekler.

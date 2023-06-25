@@ -1,8 +1,7 @@
-using System;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace Odev2Folder
+namespace Odevler.Odev2Folder
 {
     public class Odev2Manager : MonoBehaviour
     {

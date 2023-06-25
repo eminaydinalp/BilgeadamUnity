@@ -1,7 +1,6 @@
-using System;
 using UnityEngine;
 
-namespace Odev2Folder
+namespace Odevler.Odev2Folder
 {
     public class RotateObject : MonoBehaviour
     {
