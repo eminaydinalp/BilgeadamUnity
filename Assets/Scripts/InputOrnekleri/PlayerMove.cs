@@ -26,12 +26,12 @@ namespace InputOrnekleri
 
             direction = new Vector3(horizontal, 0, vertical);
 
-            //MoveWithTransform();
+            MoveWithTransform();
         }
 
         private void FixedUpdate()
         {
-            MoveWithRigidbody();
+            //MoveWithRigidbody();
         }
 
         private void MoveWithTransform()
